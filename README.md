@@ -105,12 +105,19 @@ src/
 ```bash
 git clone https://github.com/YOUR-USERNAME/codeops-spa.git
 cd codeops-spa
+```
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
+```bash
 npm install
+```
 
-3️⃣ Run development server
+### 3️⃣ Run development server
+```bash
 npm run dev
+```
 
-4️⃣ Build for production
+### 4️⃣ Build for production
+```bash
 npm run build
+```

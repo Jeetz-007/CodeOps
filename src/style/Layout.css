@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d; /* dark theme base */
+  color: #ffffff;
+}
+
 /* ===== HEADER ===== */
 .header {
   display: flex;
@@ -120,3 +127,25 @@
     display: block; /* show hamburger */
   }
 }
+
+/* Base background fix */
+html, body {
+  background-color: #0d0d0d !important;
+}
+
+/* Logo size and header adjustments for mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 1rem; /* smaller padding */
+  }
+
+  .logo img {
+    width: 80px; /* reduce logo width on mobile */
+    height: auto;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+}
+
