@@ -1,6 +1,7 @@
 /* ----------- FULL HERO SECTION ----------- */
 .home-container {
-  min-height: 80vh;
+  /* min-height: 80vh; */
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,7 @@
   color: white;
   padding: 2rem;
   position: relative;
+  z-index:1
 }
 
 /* OPTIONAL GLOWING BACKGROUND EFFECT */
@@ -18,7 +20,7 @@
   height: 500px;
   background: radial-gradient(circle, rgba(0,255,179,0.3), transparent 70%);
   filter: blur(60px);
-  z-index: -1;
+  z-index: 0;
   animation: heroGlow 4s infinite alternate;
 }
 

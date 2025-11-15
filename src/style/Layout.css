@@ -128,11 +128,6 @@ html, body {
   }
 }
 
-/* Base background fix */
-html, body {
-  background-color: #0d0d0d !important;
-}
-
 /* Logo size and header adjustments for mobile */
 @media (max-width: 768px) {
   .header {
@@ -144,7 +139,7 @@ html, body {
     height: auto;
   }
 
-  .nav {
+  .desktop-nav {
     gap: 1rem;
   }
 }

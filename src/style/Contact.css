@@ -1,8 +1,7 @@
-
 .contact {
   max-width: 500px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 3rem 0; /* NEW spacing */
 }
 
 .contact-heading {
@@ -21,25 +20,30 @@
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: white;
-  /* width: 100%; */
+  background: #111;
   padding: 10px;
-  border: none;
+  border: 1px solid rgba(0, 255, 179, 0.4);
   border-radius: 6px;
   font-size: 1rem;
-  color: black;
+  color: #00ffb3;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00ffb3;
+  box-shadow: 0 0 8px rgba(0,255,179,0.5);
 }
 
 textarea {
   height: 180px;
-  resize: vertical; /* Allows resizing but only vertically */
-  color: black;
+  resize: vertical;
 }
 
 /* Labels */
 label {
   font-weight: 600;
-  margin-bottom: -0.3rem;
+  margin-bottom: 0.3rem; /* fixed */
 }
 
 /* Button */
@@ -58,7 +62,7 @@ label {
   background-color: #00cc8a;
 }
 
-/* NEON SUCCESS POPUP */
+/* Neon Popup */
 .popup {
   position: fixed;
   top: 20px;
@@ -71,18 +75,10 @@ label {
   font-weight: bold;
   box-shadow: 0 0 20px rgba(0,255,179,0.4);
   animation: slideIn 0.4s ease forwards;
-  z-index: 3000;  /* FIXED */
+  z-index: 3000;
 }
 
-
-/* Slide-in animation */
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
 }

@@ -1,14 +1,23 @@
-.NotFound{
+.NotFound {
     text-align: center;
-    padding: 150px;
+    padding: 5rem 1rem;     /* FIXED */
+    color: white;           /* added */
 }
 
-.home-link{
+.home-link {
     text-decoration: none;
     font-weight: bold;
-    color:  #00ffb3;
+    color: #00ffb3;
+    transition: 0.3s ease;
 }
 
-.home-link:hover{
+.home-link:hover {
     color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .NotFound {
+        padding: 3rem 1rem; /* mobile fix */
+    }
 }

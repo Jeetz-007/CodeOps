@@ -1,7 +1,7 @@
 .footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 3rem 2rem;
-  background: #0d0d0d;
+  background: #080808;
   color: #ccc;
   text-align: center;
   border-top: 1px solid rgba(0, 255, 179, 0.3);
@@ -24,7 +24,7 @@
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
@@ -68,6 +68,11 @@
 }
 
 /* RESPONSIVE */
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
 @media (max-width: 600px) {
   .footer-links {
     gap: 1rem;
