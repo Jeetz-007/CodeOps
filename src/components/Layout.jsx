@@ -13,7 +13,7 @@ function Layout() {
         {/* LOGO */}
         <div className="logo">
           <NavLink to="/">
-            <img src="/src/assets/codeops_logo_cropped.png" alt="CodeOps Logo" />
+            <img src="/codeops_logo_cropped.png" alt="CodeOps Logo" />
           </NavLink>
         </div>
 

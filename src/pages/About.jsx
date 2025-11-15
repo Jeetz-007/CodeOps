@@ -8,7 +8,7 @@ function About() {
         <p>A next-generation freelancing platform built by developers</p>
 
         <div className="about-pic">
-          <img src="/src/assets/AboutPic.jpg" alt="About CodeOps" />
+          <img src="/AboutPic.jpg" alt="About CodeOps" />
         </div>
       </div>
 
@@ -71,7 +71,7 @@ function About() {
         <div className="work">
             <h2>Our Work</h2>
             <div className="row">
-                <img src="src/assets/frontend.jpg" alt="Frontend" />
+                <img src="/frontend.jpg" alt="Frontend" />
                 <p>Our frontend developers focus on creating interfaces that feel effortless and engaging.
                      We combine modern frameworks, clean component architecture, and thoughtful design 
                      principles to build user experiences that look sharp and perform smoothly across all devices. 
@@ -80,7 +80,7 @@ function About() {
                 </p>
             </div>
             <div className="row-reverse">
-                <img src="src/assets/Backend.jpg" alt="Backend" />
+                <img src="/Backend.jpg" alt="Backend" />
                 <p>
                     Behind every great product is a strong backend, and 
                     our team engineers systems built for durability, speed, and scale. 
@@ -91,7 +91,7 @@ function About() {
                 </p>
             </div>
             <div className="row">
-                <img src="src/assets/FullStack.jpg" alt="Fullstack" />
+                <img src="/FullStack.jpg" alt="Fullstack" />
                 <p>
                     Our full-stack developers bridge the gap between frontend beauty and backend power. 
                     They understand the full journey of a feature — from designing the UI to structuring the 
@@ -101,7 +101,7 @@ function About() {
                 </p>
             </div>
             <div className="row-reverse">
-                <img src="src/assets/Cybersecurity.jpg" alt="" />
+                <img src="/Cybersecurity.jpg" alt="Cybersecurity" />
                 <p>
                     Security is at the core of everything we build. Our cybersecurity 
                     specialists work to protect applications from threats, vulnerabilities, 
