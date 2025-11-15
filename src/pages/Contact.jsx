@@ -18,13 +18,29 @@
 // export default Contact
 
 import { Form } from "react-router-dom";
+import { useState } from "react";
 
 function Contact() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setShowPopup(true);
+
+    e.target.reset()
+
+    // Auto hide after 3 sec
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
+  }
+
   return (
     <div className="contact">
       <h2 className="contact-heading">Join us</h2>
 
-      <Form method="post" className="contact-form">
+      <form onSubmit={handleSubmit} className="contact-form">
         <label htmlFor="username">Username</label>
         <input 
           type="text" 
@@ -51,7 +67,14 @@ function Contact() {
         ></textarea>
 
         <button type="submit" className="contact-btn">Submit</button>
-      </Form>
+      </form>
+
+        {/* SUCCESS POPUP */}
+      {showPopup && (
+        <div className="popup">
+          <p>Message Submitted Successfully! 🎉</p>
+        </div>
+      )}
     </div>
   );
 }
