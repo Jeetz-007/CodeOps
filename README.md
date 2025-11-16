@@ -68,32 +68,30 @@ Includes:
 
 ## 📂 Project Structure
 src/
-├─ components/
-│ ├─ Layout.jsx
-│ ├─ Footer.jsx
-│
-├─ pages/
-│ ├─ Home.jsx
-│ ├─ About.jsx
-│ ├─ Careers.jsx
-│ ├─ CareerDetails.jsx
-│ ├─ Contact.jsx
-│ ├─ NotFound.jsx
-│
-├─ style/
-│ ├─ Layout.css
-│ ├─ Home.css
-│ ├─ About.css
-│ ├─ Careers.css
-│ ├─ CareerDetails.css
-│ ├─ Contact.css
-│ └─ NotFound.css
-│
-├─ assets/
-│ └─ images, logos, etc.
-│
-├─ App.jsx
-└─ main.jsx
+    -> components/
+        - Layout.jsx
+        - Footer.jsx
+    -> pages/
+        - Home.jsx
+        - About.jsx
+        - Careers.jsx
+        - CareerDetails.jsx
+        - Contact.jsx
+        - NotFound.jsx
+    -> style/
+        - Layout.css
+        - Home.css
+        - About.css
+        - Careers.css
+        - CareerDetails.css
+        - Contact.css
+        - NotFound.css
+
+assets/
+    -  images, logos, etc.
+
+=> App.jsx
+=> main.jsx
 
 
 ---

@@ -68,7 +68,7 @@ button:focus-visible {
 } */
 
 *{
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
