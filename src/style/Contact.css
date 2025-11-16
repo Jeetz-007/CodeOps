@@ -65,8 +65,7 @@ label {
 /* Neon Popup */
 .popup {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  inset: 20px 20px auto auto;
   background: #0d0d0d;
   padding: 15px 20px;
   border: 1px solid #00ffb3;
@@ -75,10 +74,104 @@ label {
   font-weight: bold;
   box-shadow: 0 0 20px rgba(0,255,179,0.4);
   animation: slideIn 0.4s ease forwards;
-  z-index: 3000;
+
+  /* FIXES */
+  z-index: 999999 !important;
+  transform: translateZ(999px);
+  pointer-events: all;
 }
+
 
 @keyframes slideIn {
   from { opacity: 0; transform: translateX(100%); }
   to { opacity: 1; transform: translateX(0); }
+}
+
+
+/* Media Queries */
+/* ===========================================
+   CONTACT PAGE — RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablets & small laptops (≤1024px) */
+@media (max-width: 1024px) {
+  .contact {
+    max-width: 600px;
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-heading {
+    font-size: 1.9rem;
+  }
+
+  textarea {
+    height: 160px;
+  }
+}
+
+/* Regular phones (≤768px) */
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-heading {
+    font-size: 1.7rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .contact-btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Small phones (≤480px) */
+@media (max-width: 480px) {
+  .contact {
+    padding: 1.5rem 0.7rem;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    gap: 0.8rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    height: 130px;
+  }
+
+  .contact-btn {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Popup position adjustment */
+  .popup {
+    top: 15px;
+    right: 10px;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
 }
