@@ -25,6 +25,8 @@ import "./style/Careers.css"
 import "./style/CareerDetails.css"
 import "./style/Footer.css"
 
+import "./style/ios_fixes.css"
+
 // Code
 const router = createBrowserRouter(
   createRoutesFromElements(

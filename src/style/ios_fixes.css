@@ -1,0 +1,40 @@
+/* =========================================================
+   iPHONE SAFARI FIXES
+   Handles: sticky header bug, vh bug, safe area insets,
+   and z-index painting issues specifically on iOS Safari.
+   ========================================================= */
+
+/* Fix sticky header painting issue */
+.header {
+  will-change: transform;
+  transform: translateZ(0);
+  z-index: 9999 !important;
+}
+
+/* Fix iPhone dynamic viewport height issue */
+.home-container {
+  min-height: 80svh;  /* iPhone 15/14/13 fix */
+}
+
+/* Fix pseudo-element bleeding behind body */
+.home-container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-container::before {
+  z-index: 0;
+}
+
+/* Ensure background covers safe areas (iPhone notch) */
+html {
+  background-color: #0d0d0d !important;
+  height: 100%;
+}
+
+body {
+  background-color: #0d0d0d !important;
+  min-height: 100%;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
