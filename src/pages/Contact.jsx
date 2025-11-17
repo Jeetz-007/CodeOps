@@ -1,23 +1,3 @@
-// import {Form} from "react-router-dom"
-// function Contact(){
-//     return(
-//         <div className="contact">
-//             <h2 className="contact-heading">Join us</h2>
-//             <Form method="post">
-//                 <label htmlFor="username">Username</label><br />
-//                 <input type="text" placeholder="Enter your name" required/><br />
-//                 <label htmlFor="email">Email</label><br />
-//                 <input type="email" placeholder="Enter your email" required/><br />
-//                 <label htmlFor="message">Message</label><br />
-//                 <textarea name="message" id="message" placeholder="Type Here...."></textarea>
-//             </Form>
-//         </div>
-//     )
-// }
-
-// export default Contact
-
-import { Form } from "react-router-dom";
 import { useState } from "react";
 
 function Contact() {
@@ -69,7 +49,7 @@ function Contact() {
         <button type="submit" className="contact-btn">Submit</button>
       </form>
 
-        {/* SUCCESS POPUP */}
+        {/* success popup */}
       {showPopup && (
         <div className="popup">
           <p>Message Submitted Successfully! 🎉</p>

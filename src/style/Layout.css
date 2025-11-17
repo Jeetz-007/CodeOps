@@ -1,11 +1,10 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #0d0d0d; /* dark theme base */
+  background-color: #0d0d0d;
   color: #ffffff;
 }
 
-/* ===== HEADER ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,12 +18,12 @@ html, body {
   z-index: 1000;
 }
 
-/* LOGO */
+
 .logo img {
   width: 120px;
 }
 
-/* DESKTOP NAV */
+
 .desktop-nav {
   display: flex;
   gap: 1.5rem;
@@ -63,7 +62,6 @@ html, body {
   width: 100%;
 }
 
-/* ===== HAMBURGER ICON ===== */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -77,7 +75,6 @@ html, body {
   transition: 0.4s;
 }
 
-/* Animation for opening */
 .bar1-open {
   transform: rotate(45deg) translate(5px, 6px);
 }
@@ -90,7 +87,6 @@ html, body {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ===== MOBILE NAV ===== */
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -116,26 +112,25 @@ html, body {
   color: #00ffb3;
 }
 
-/* ===== RESPONSIVE BREAKPOINT ===== */
+/* Media Queries*/
 @media (max-width: 768px) {
 
   .desktop-nav {
-    display: none; /* hide nav */
+    display: none; 
   }
 
   .hamburger {
-    display: block; /* show hamburger */
+    display: block;
   }
 }
 
-/* Logo size and header adjustments for mobile */
 @media (max-width: 768px) {
   .header {
-    padding: 0.5rem 1rem; /* smaller padding */
+    padding: 0.5rem 1rem; 
   }
 
   .logo img {
-    width: 80px; /* reduce logo width on mobile */
+    width: 80px;
     height: auto;
   }
 

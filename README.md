@@ -1,4 +1,4 @@
-# 🚀 CodeOps – Single Page Application
+# CodeOps – Single Page Application
 
 A modern, responsive, and performance-optimized **Single Page Application (SPA)** built with **React + React Router DOM**.  
 Designed as a professional portfolio project showcasing routing, API integration, UI design, and frontend architecture.
@@ -10,10 +10,10 @@ CodeOps is a fictional freelancing agency platform where:
 
 ---
 
-## ✨ Features
+## Features
 
-### 🧭 **SPA Routing**
-Built using `react-router-dom` (v6):
+### **SPA Routing**
+Built using `react-router-dom`:
 - `/` – Home  
 - `/about` – About  
 - `/careers` – Careers Listing  
@@ -23,7 +23,7 @@ Built using `react-router-dom` (v6):
 
 ---
 
-### 🔥 **Dynamic Careers API**
+### **Dynamic Careers API**
 Careers page fetches data from a hosted JSON API: https://jeetz-007.github.io/Careers-API/careers.json
 Includes:
 - Job title  
@@ -35,26 +35,22 @@ Includes:
 
 ---
 
-### 🎨 **Premium UI & Styling**
-- Modern dark theme  
+### User Interface & Styling**
 - Neon green accent styling (#00ffb3)  
 - Smooth hover animations  
 - Sticky responsive navbar  
-- Mobile-friendly hamburger menu  
-- Professional hero section  
-- Clean typography & spacing  
-- Skill chips + glowing buttons  
+- Mobile-friendly hamburger menu     
 
 ---
 
-### 📱 **Fully Responsive**
+### **Fully Responsive**
 - Desktop, tablet, and mobile optimized  
 - Collapsible hamburger nav on smaller screens  
 - Auto-adjusting layout for content sections  
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |-----------|----------|
@@ -66,7 +62,7 @@ Includes:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 src/
     -> components/
         - Layout.jsx
@@ -101,7 +97,7 @@ assets/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/codeops-spa.git
+git clone "Repo Link"
 cd codeops-spa
 ```
 

@@ -1,7 +1,7 @@
 .NotFound {
     text-align: center;
-    padding: 5rem 1rem;     /* FIXED */
-    color: white;           /* added */
+    padding: 5rem 1rem;    
+    color: white;           
 }
 
 .home-link {
@@ -18,6 +18,6 @@
 
 @media (max-width: 600px) {
     .NotFound {
-        padding: 3rem 1rem; /* mobile fix */
+        padding: 3rem 1rem; 
     }
 }

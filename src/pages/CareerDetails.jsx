@@ -21,7 +21,7 @@ function CareerDetails() {
           <p><strong>Experience:</strong> {job.experience}</p>
         </div>
 
-        {/* SKILLS */}
+        {/* skills */}
         <div className="skills-section">
           <h3>Skills Required:</h3>
           <div className="skills-container">
@@ -33,12 +33,10 @@ function CareerDetails() {
           </div>
         </div>
 
-        {/* DESCRIPTION */}
         <p className="job-description">
           {job.description || "This role includes hands-on tasks, collaboration, and problem-solving."}
         </p>
 
-        {/* APPLY BUTTON */}
         <a href={job.apply_link} target="_blank" className="apply-btn">
           Apply Now →
         </a>
@@ -50,22 +48,18 @@ function CareerDetails() {
 
 export const CareerDetailsLoader = async ({ params }) => {
   const res = await fetch("https://jeetz-007.github.io/Careers-API/careers.json");
-
   if (!res.ok) {
     throw new Error("Failed to fetch career details");
   }
-
   const data = await res.json();
   const jobs = data.jobs;
 
   // Finding job by id
   const job = jobs.find((j) => j.id.toString() === params.id);
-
   if (!job) {
     throw new Error("Career not found");
   }
-
-  return job; // return single job object
+  return job;
 };
 
 

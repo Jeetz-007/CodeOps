@@ -3,7 +3,6 @@
   text-align: center;
 }
 
-/* Top section */
 .heading-picture h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -28,7 +27,7 @@
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;     /* Makes it responsive */
+  flex-wrap: wrap;     
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -123,7 +122,6 @@
 }
 
 
-/* Shared row styling */
 .row,
 .row-reverse {
   display: flex;
@@ -134,12 +132,11 @@
   margin-bottom: 2rem;
 }
 
-/* Reverse direction for alternating rows */
+
 .row-reverse {
   flex-direction: row-reverse;
 }
 
-/* Image styling */
 .row img,
 .row-reverse img {
   width: 420px;
@@ -149,7 +146,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Text styling */
 .row p,
 .row-reverse p {
   width: 50%;
@@ -160,7 +156,7 @@
 
 
 
-/* Responsive */
+/* Media Quiries */
 @media (max-width: 768px) {
   .row,
   .row-reverse {

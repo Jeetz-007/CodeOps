@@ -10,14 +10,13 @@ function Layout() {
     <>
       <header className="header">
 
-        {/* LOGO */}
+        {/* codeops Logo */}
         <div className="logo">
           <NavLink to="/">
             <img src="/CodeOps_bgRemoved.png" alt="CodeOps Logo" />
           </NavLink>
         </div>
 
-        {/* DESKTOP NAV */}
         <nav className="nav desktop-nav">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/about">About</NavLink>
@@ -25,7 +24,7 @@ function Layout() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
 
-        {/* HAMBURGER ICON */}
+        {/* hamburger icon */}
         <div 
           className="hamburger" 
           onClick={() => setOpenMenu(!openMenu)}
@@ -37,7 +36,7 @@ function Layout() {
 
       </header>
 
-      {/* MOBILE MENU */}
+      {/* menu in mobile */}
       <nav className={openMenu ? "mobile-nav open" : "mobile-nav"}>
         <NavLink onClick={() => setOpenMenu(false)} to="/" end>Home</NavLink>
         <NavLink onClick={() => setOpenMenu(false)} to="/about">About</NavLink>

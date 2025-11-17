@@ -1,7 +1,7 @@
 .contact {
   max-width: 500px;
   margin: 0 auto;
-  padding: 3rem 0; /* NEW spacing */
+  padding: 3rem 0;
 }
 
 .contact-heading {
@@ -16,7 +16,7 @@
   gap: 1rem;
 }
 
-/* Inputs */
+/* Input fields */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -40,10 +40,9 @@ textarea {
   resize: vertical;
 }
 
-/* Labels */
 label {
   font-weight: 600;
-  margin-bottom: 0.3rem; /* fixed */
+  margin-bottom: 0.3rem;
 }
 
 /* Button */
@@ -74,8 +73,6 @@ label {
   font-weight: bold;
   box-shadow: 0 0 20px rgba(0,255,179,0.4);
   animation: slideIn 0.4s ease forwards;
-
-  /* FIXES */
   z-index: 999999 !important;
   transform: translateZ(999px);
   pointer-events: all;
@@ -89,11 +86,6 @@ label {
 
 
 /* Media Queries */
-/* ===========================================
-   CONTACT PAGE — RESPONSIVE DESIGN
-   =========================================== */
-
-/* Tablets & small laptops (≤1024px) */
 @media (max-width: 1024px) {
   .contact {
     max-width: 600px;
@@ -109,7 +101,7 @@ label {
   }
 }
 
-/* Regular phones (≤768px) */
+
 @media (max-width: 768px) {
   .contact {
     padding: 2rem 1rem;
@@ -136,7 +128,7 @@ label {
   }
 }
 
-/* Small phones (≤480px) */
+
 @media (max-width: 480px) {
   .contact {
     padding: 1.5rem 0.7rem;

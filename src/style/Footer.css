@@ -8,7 +8,6 @@
   box-shadow: 0 -2px 15px rgba(0,255,179,0.1);
 }
 
-/* BRAND */
 .footer-brand h2 {
   color: #00ffb3;
   font-size: 2rem;
@@ -20,7 +19,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* NAV LINKS */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -41,7 +39,6 @@
   text-shadow: 0 0 10px rgba(0,255,179,0.5);
 }
 
-/* SOCIAL ICONS */
 .footer-social {
   margin-bottom: 1.5rem;
 }
@@ -60,14 +57,13 @@
   transform: translateY(-2px);
 }
 
-/* COPYRIGHT */
 .footer-copy {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: #777;
 }
 
-/* RESPONSIVE */
+/* Media Queries */
 @media (max-width: 600px) {
   .footer {
     padding: 2rem 1rem;

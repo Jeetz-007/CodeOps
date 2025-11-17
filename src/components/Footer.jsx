@@ -4,13 +4,11 @@ function Footer() {
   return (
     <footer className="footer">
       
-      {/* BRAND */}
       <div className="footer-brand">
         <h2>CodeOps</h2>
         <p>Empowering Devs. Accelerating Businesses.</p>
       </div>
 
-      {/* NAV LINKS */}
       <div className="footer-links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
@@ -18,7 +16,6 @@ function Footer() {
         <Link to="/contact">Contact</Link>
       </div>
 
-      {/* COPYRIGHT */}
       <div className="footer-copy">
         © {new Date().getFullYear()} CodeOps. All rights reserved.
       </div>
